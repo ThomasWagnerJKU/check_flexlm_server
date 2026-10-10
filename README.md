@@ -87,6 +87,16 @@ and there is no maintained open implementation of it, so the plugin needs
   daemon port (set with `VENDOR ... port=` in the license file) tells whether
   the daemons listen, but not their usage or expiry.
 
+## Bash completion
+
+`completions/check_flexlm_server` completes the options and their values,
+also when the plugin is called by its full path. The packages install it;
+otherwise copy it to bash-completion's directory:
+
+```sh
+install -D -m 0644 completions/check_flexlm_server /usr/share/bash-completion/completions/check_flexlm_server
+```
+
 ## Tests
 
 ```sh
